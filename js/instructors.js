@@ -9,7 +9,7 @@ const INSTRUCTORS = [
     title: 'Lead Code Design Engineer',
     bio: 'Sarah has spent over a decade building developer tools and leads our systems curriculum. She specializes in turning intimidating architecture concepts into approachable, hands-on lessons for beginners and career switchers alike.',
     avatarBg: '111111',
-    photo: '' // e.g. 'images/sarah-chen.jpg' — leave blank to use the generated avatar
+    photo: 'images/sarah_chen.png' // e.g. 'images/sarah-chen.jpg' — leave blank to use the generated avatar
   },
   {
     id: 'chen-jonh',
@@ -17,7 +17,7 @@ const INSTRUCTORS = [
     title: 'Senior Frontend Architect',
     bio: 'Chen has led frontend teams at several fast-growing startups. His courses focus on real-world component design, accessibility, and performance — the things textbooks tend to skip.',
     avatarBg: 'f4a6c1',
-    photo: ''
+    photo: 'images/chen_jonh.png'
   },
   {
     id: 'jonh-doe',
@@ -25,7 +25,7 @@ const INSTRUCTORS = [
     title: 'Backend Web Lead',
     bio: 'Jonh builds resilient backend systems for a living and teaches the same patterns he uses in production: clean APIs, sensible data models, and just enough architecture to scale without overengineering.',
     avatarBg: '111111',
-    photo: ''
+    photo: 'images/Jonh_Doe.png'
   },
   {
     id: 'anya',
@@ -33,7 +33,7 @@ const INSTRUCTORS = [
     title: 'Product Design Mentor',
     bio: 'Anya mentors aspiring product designers on translating rough ideas into interfaces people actually enjoy using, with an emphasis on research, iteration, and clear design rationale.',
     avatarBg: 'f4a6c1',
-    photo: ''
+    photo: 'images/anya.png'
   },
   {
     id: 'jonan-zang-data',
@@ -41,7 +41,7 @@ const INSTRUCTORS = [
     title: 'Data Science Mentor',
     bio: 'Jonan has spent years turning messy datasets into clear, actionable insight. His mentoring style is practical and project-based — you will spend more time in notebooks than in slide decks.',
     avatarBg: '111111',
-    photo: ''
+    photo: 'images/Jonan_zang.png'
   },
   {
     id: 'jonan-zang-mobile',
@@ -49,7 +49,7 @@ const INSTRUCTORS = [
     title: 'Senior Mobile App Developer',
     bio: 'Jonan has shipped mobile apps used by millions and teaches the practical side of mobile development: performance, platform quirks, and getting an app from prototype to app store.',
     avatarBg: 'f4a6c1',
-    photo: ''
+    photo: 'images/JonanZang.png'
   }
 ];
 
