@@ -14,7 +14,7 @@ const COURSES = [
     description:
       'Learn the building blocks of every website: semantic HTML structure and modern CSS layout. This course is designed for absolute beginners and gets you writing real pages fast.',
     color: '#e34f26',
-    image: '' // e.g. 'images/html5-course.jpg' — leave blank to use the colored badge
+    image: 'images/html.png' // e.g. 'images/html5-course.jpg' — leave blank to use the colored badge
   },
   {
     id: 'cpp-windows',
@@ -22,11 +22,11 @@ const COURSES = [
     tag: 'C#',
     level: 'Beginner',
     duration: '8-10 Hours',
-    price: '$10.99',
+    price: '$200.99',
     description:
       'Learn essential C# programming concepts and understand how to solve problems using logic and data structures. You will learn to work with arrays, loops, conditions, functions, and basic data organization.',
     color: '#178600',
-    image: ''
+    image: 'images/C_sharp.png'
   },
   {
     id: 'python',
@@ -34,23 +34,23 @@ const COURSES = [
     tag: 'Python',
     level: 'Beginner',
     duration: '8-10 Hours',
-    price: '$10.99',
+    price: '$122.99',
     description:
       'Learn Python basics and data handling. This course is designed for beginners who want a practical, hands-on introduction to one of the most in-demand languages.',
     color: '#3776ab',
-    image: ''
+    image: 'images/python.jpg'
   },
   {
-    id: 'cpp-desktop',
-    name: 'C# Windows Desktop Development',
-    tag: 'C#',
+    id: 'C++',
+    name: 'C++ Windows Desktop Development',
+    tag: 'C++',
     level: 'Beginner',
     duration: '8-10 Hours',
-    price: '$10.99',
+    price: '$111.99',
     description:
-      'Learn the fundamentals of C# programming and build interactive desktop applications using Windows Forms. You will learn to work with forms, buttons, textboxes, events, and basic application logic.',
+      'the fundamentals of C++ programming and build interactive desktop applications.',
     color: '#9b4f96',
-    image: ''
+    image: 'images/C_plus.png'
   }
 ];
 
