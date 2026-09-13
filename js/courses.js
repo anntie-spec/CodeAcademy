@@ -40,18 +40,18 @@ const COURSES = [
     color: '#3776ab',
     image: 'images/python.jpg'
   },
-  {
-    id: 'C++',
-    name: 'C++ Windows Desktop Development',
-    tag: 'C++',
-    level: 'Beginner',
-    duration: '8-10 Hours',
-    price: '$111.99',
-    description:
-      'the fundamentals of C++ programming and build interactive desktop applications.',
-    color: '#9b4f96',
-    image: 'images/C_plus.png'
-  }
+  // {
+  //   id: 'C++',
+  //   name: 'C++ Windows Desktop Development',
+  //   tag: 'C++',
+  //   level: 'Beginner',
+  //   duration: '8-10 Hours',
+  //   price: '$111.99',
+  //   description:
+  //     'the fundamentals of C++ programming and build interactive desktop applications.',
+  //   color: '#9b4f96',
+  //   image: 'images/C_plus.png'
+  // }
 ];
 
 // Builds the little logo box: a real <img> if the course has an "image"
