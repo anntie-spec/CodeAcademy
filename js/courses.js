@@ -38,7 +38,7 @@ const COURSES = [
     description:
       'Learn Python basics and data handling. This course is designed for beginners who want a practical, hands-on introduction to one of the most in-demand languages.',
     color: '#3776ab',
-    image: 'images/python.jpg'
+    image: 'images/python.png'
   },
   // {
   //   id: 'C++',
