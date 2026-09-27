@@ -98,7 +98,16 @@ img { max-width: 100%; display: block; }
 
 .nav__toggle {
   display: none;
+  font-size: 1.6rem;
+  line-height: 1;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--white);
+  cursor: pointer;
 }
+
+.mobile-only { display: none; }
 
 /* ---------- Buttons ---------- */
 .btn {
@@ -214,17 +223,25 @@ img { max-width: 100%; display: block; }
   padding: 28px;
 }
 
+/* Feature cards get no padding at the top, so the image can go
+   full-width edge-to-edge; the text keeps its own padding below. */
+.card--feature {
+  padding: 0;
+  overflow: hidden;
+}
+
 .card--feature img {
-  width: 120px;
-  height: 120px;
+  display: block;
+  width: 100%;
+  height: 200px;
   margin-bottom: 16px;
-  border-radius: 12px;
+  border-radius: 0;
   object-fit: cover;
 }
 
-.card--feature h3 { font-size: 1.1rem; }
+.card--feature h3 { font-size: 1.1rem; padding: 0 28px; }
 
-.card--feature p { color: var(--muted); font-size: 0.95rem; margin: 0; }
+.card--feature p { color: var(--muted); font-size: 0.95rem; margin: 0; padding: 0 28px 28px; }
 
 .step {
   display: flex;
@@ -271,9 +288,14 @@ img { max-width: 100%; display: block; }
 }
 
 .instructor-card img {
+  /* width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  margin-top: 8px; */
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  object-position: top;   /* ← add this line */
   margin-top: 8px;
 }
 
@@ -316,14 +338,19 @@ img { max-width: 100%; display: block; }
 }
 
 .detail-hero {
-  background: var(--pink);
+  /* background: var(--pink);
   border-radius: var(--radius);
   padding: 32px;
   display: grid;
   grid-template-columns: 220px 1fr;
   gap: 32px;
   align-items: center;
-  margin-bottom: 32px;
+  margin-bottom: 32px; */
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: top;   /* ← add this line */
+  border-radius: var(--radius);
 }
 
 .detail-hero img {
@@ -470,6 +497,19 @@ img { max-width: 100%; display: block; }
   border-color: var(--pink-deep);
 }
 
+.field input.is-invalid {
+  border-color: #d33;
+}
+
+.field-error {
+  display: none;
+  color: #a3241a;
+  font-size: 0.82rem;
+  margin-top: 6px;
+}
+
+.field-error.is-visible { display: block; }
+
 .field-row { display: flex; gap: 14px; }
 .field-row .field { flex: 1; }
 
@@ -539,8 +579,41 @@ img { max-width: 100%; display: block; }
   .detail-hero img { width: 160px; margin: 0 auto; }
 }
 
+/* ---------- Mobile menu ---------- */
+@media (max-width: 820px) {
+  header { position: relative; }
+
+  .nav__toggle { display: block; }   /* show hamburger */
+  .nav__actions { display: none; }   /* hide top-right buttons */
+  .mobile-only { display: block; }   /* show Log in / Sign up in the menu */
+
+  .nav__links {
+    display: none;                   /* menu closed */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 8px 20px;
+  }
+
+  .nav__links.open { display: block; }  /* menu open */
+
+  .nav__links li { border-top: 1px solid var(--border); }
+  .nav__links li:first-child { border-top: none; }
+
+  .nav__links a {
+    display: block;
+    padding: 14px 0;
+    border-bottom: none;
+  }
+
+  .nav__links a.is-active { color: var(--pink-deep); }
+}
+
 @media (max-width: 640px) {
-  .nav__links { display: none; }
   .grid--3, .grid--4, .grid--2 { grid-template-columns: 1fr; }
   .field-row { flex-direction: column; gap: 0; }
 }

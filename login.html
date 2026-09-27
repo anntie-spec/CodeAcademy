@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="description" content="Log in to your CodeAcademy account to continue your courses.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Log In — CodeAcademy</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,10 +14,13 @@
 <header>
   <nav class="nav">
     <a class="nav__logo" href="index.html">Code<span>Academy</span></a>
+    <button class="nav__toggle" onclick="document.querySelector('.nav__links').classList.toggle('open')">&#9776;</button>
     <ul class="nav__links">
       <li><a href="index.html">Home</a></li>
       <li><a href="instructors.html">Instructors</a></li>
       <li><a href="courses.html">Courses</a></li>
+      <li class="mobile-only"><a href="login.html">Log in</a></li>
+      <li class="mobile-only"><a href="signup.html">Sign up</a></li>
     </ul>
     <div class="nav__actions" data-nav-actions>
       <a class="btn btn--ghost" href="login.html">Log in</a>
@@ -36,12 +40,15 @@
 
     <form data-login-form novalidate>
       <div class="field">
-        <label for="email">Email Address</label>
+        <label for="email">Email Address *</label>
         <input id="email" name="email" type="email" autocomplete="email" required>
+        <span class="field-error" data-error-for="email"></span>
       </div>
+      
       <div class="field">
-        <label for="password">Password</label>
+        <label for="password">Password *</label>
         <input id="password" name="password" type="password" autocomplete="current-password" required>
+        <span class="field-error" data-error-for="password"></span>
       </div>
       <button class="btn btn--primary btn--block" type="submit">Log In</button>
     </form>

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="description" content="Create a free CodeAcademy account and start learning to code today.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sign Up — CodeAcademy</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,10 +14,13 @@
 <header>
   <nav class="nav">
     <a class="nav__logo" href="index.html">Code<span>Academy</span></a>
+    <button class="nav__toggle" onclick="document.querySelector('.nav__links').classList.toggle('open')">&#9776;</button>
     <ul class="nav__links">
       <li><a href="index.html">Home</a></li>
       <li><a href="instructors.html">Instructors</a></li>
       <li><a href="courses.html">Courses</a></li>
+      <li class="mobile-only"><a href="login.html">Log in</a></li>
+      <li class="mobile-only"><a href="signup.html">Sign up</a></li>
     </ul>
     <div class="nav__actions" data-nav-actions>
       <a class="btn btn--ghost" href="login.html">Log in</a>
@@ -36,21 +40,25 @@
 
     <form data-signup-form novalidate>
       <div class="field">
-        <label for="fullName">Full Name</label>
+        <label for="fullName">Full Name *</label>
         <input id="fullName" name="fullName" type="text" autocomplete="name" required>
+        <span class="field-error" data-error-for="fullName"></span>
       </div>
       <div class="field">
-        <label for="email">Email Address</label>
+        <label for="email">Email Address *</label>
         <input id="email" name="email" type="email" autocomplete="email" required>
+        <span class="field-error" data-error-for="email"></span>
       </div>
       <div class="field-row">
         <div class="field">
-          <label for="password">Password</label>
+          <label for="password">Password *</label>
           <input id="password" name="password" type="password" autocomplete="new-password" minlength="8" required>
+          <span class="field-error" data-error-for="password"></span>
         </div>
         <div class="field">
-          <label for="confirmPassword">Confirm Password</label>
+          <label for="confirmPassword">Confirm Password *</label>
           <input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" minlength="8" required>
+          <span class="field-error" data-error-for="confirmPassword"></span>
         </div>
       </div>
       <button class="btn btn--primary btn--block" type="submit">Sign Up</button>

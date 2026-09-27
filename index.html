@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="description" content="Self-paced coding courses in HTML, Python, C# and C++, with real mentors and hands-on projects.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CodeAcademy — Master Tech & Programming Skills at Your Own Pace</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,10 +14,13 @@
 <header>
   <nav class="nav">
     <a class="nav__logo" href="index.html">Code<span>Academy</span></a>
+    <button class="nav__toggle" onclick="document.querySelector('.nav__links').classList.toggle('open')">&#9776;</button>
     <ul class="nav__links">
       <li><a href="index.html" class="is-active">Home</a></li>
       <li><a href="instructors.html">Instructors</a></li>
       <li><a href="courses.html">Courses</a></li>
+      <li class="mobile-only"><a href="login.html">Log in</a></li>
+      <li class="mobile-only"><a href="signup.html">Sign up</a></li>
     </ul>
     <div class="nav__actions">
       <a class="btn btn--ghost" href="login.html">Log in</a>
@@ -47,17 +51,17 @@
       </div>
       <div class="grid grid--3">
         <div class="card card--feature">
-          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=200&q=80" alt="">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=200&q=80" alt="Person coding on a laptop">
           <h3>Learn by Coding</h3>
           <p>Every lesson pairs a concept with an exercise, so you're writing code from day one instead of just watching it.</p>
         </div>
         <div class="card card--feature">
-          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=200&q=80" alt="">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=200&q=80" alt="Hands tying on a keyboard building a project">
           <h3>Real Projects</h3>
           <p>Courses build toward portfolio-ready projects, not disconnected quizzes you'll forget by next week.</p>
         </div>
         <div class="card card--feature">
-          <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?auto=format&fit=crop&w=200&q=80" alt="">
+          <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?auto=format&fit=crop&w=200&q=80" alt="Dashboard showing progress tracking">
           <h3>Track Your Progress</h3>
           <p>See exactly what you've covered and what's next, so momentum never depends on guesswork.</p>
         </div>

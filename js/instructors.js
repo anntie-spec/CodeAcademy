@@ -9,7 +9,7 @@ const INSTRUCTORS = [
     title: 'Lead Code Design Engineer',
     bio: 'Sarah has spent over a decade building developer tools and leads our systems curriculum. She specializes in turning intimidating architecture concepts into approachable, hands-on lessons for beginners and career switchers alike.',
     avatarBg: '111111',
-    photo: 'images/sarah_chen.png' // e.g. 'images/sarah-chen.jpg' — leave blank to use the generated avatar
+    photo: 'images/sarah_chen.png'  
   },
   {
     id: 'chen-jonh',
